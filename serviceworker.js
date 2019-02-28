@@ -175,8 +175,8 @@ if ('serviceWorker' in navigator) {
 }
 
 function registerServiceWorker() {
-    return navigator.serviceWorker.register('/serviceworker.js', {
-            scope: '/'
+    return navigator.serviceWorker.register('/serviceworker/serviceworker.js', {
+            scope: '/serviceworker/'
         })
         .then(registration => {
             console.log('Service worker successfully registered.');
